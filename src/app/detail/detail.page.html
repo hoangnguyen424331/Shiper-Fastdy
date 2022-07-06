@@ -32,7 +32,8 @@
 <ion-list lines="none">
 
 <ion-item text-wrap style="font-size: 12px" *ngFor="let item of data.items">
-  <ion-label>{{ item.qty }} {{ item.type }} {{ item.item }}</ion-label>
+  <ion-label>{{ item.qty }} {{ item.item }}</ion-label>
+  <!-- {{ item.type }} -->
   <ion-icon name="restaurant" slot="start" color="danger"></ion-icon>
 </ion-item>
 
@@ -59,7 +60,7 @@
 
 <ion-row style="border-bottom: 1px solid #f9f9f9;padding: 5px 5px">
 <ion-col size="6"><b>{{ text.d_total_amount }}</b></ion-col>
-<ion-col size="6">{{ data.total }}{{ data.currency }}</ion-col>
+<ion-col size="6">{{ data.total }}.000{{ data.currency }}</ion-col>
 </ion-row>
 
 <ion-row style="padding: 5px 5px">
